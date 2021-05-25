@@ -1,3 +1,4 @@
+import {bol,couteau,poele} from './objects.js';
 class Personne {
     constructor(nom, lieu, argent) {
         this.nom = nom;
@@ -61,7 +62,7 @@ class Personne {
             }
         }
 
-        
+
         this.viderBol = () => {
             poele.contenu.push(bol.contenu.shift());
             console.log(`${this.nom} vide le bol dans la poele`);
